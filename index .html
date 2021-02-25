@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problems</title>
+    <link rel="stylesheet" href="css\bootstrap.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- CONDITIONAL -->
+                <center style="font-family: cursive;padding-left: 10px; margin:20px;border-left:#dc3546 7px solid;border-right:#dc3546 7px solid; font-weight: bolder;color: #dc3546;font-size: 40px;margin-left: -10px;">Conditional Fuctions</center>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-md-5 col-sm-12">        
+    <p style="font-size:30px;color: #dc3546;font-family: cursive; "> Two Number Maximization:<br/>
+    <input type="number" id="get" size="300px" placeholder="Enter a Number" required/>
+    <p id="r1" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+    <button style="margin-top: -15px;" onclick="maximum()" id="b1" type="button" class="btn btn-danger">Check</button>
+   </p> </div>
+<!-- next Module -->
+   <div class="col-md-5 col-sm-12">        
+    <p style="font-size:30px;color: #dc3546;font-family: cursive; "> Three Number Maximization:<br/>
+    <input type="number" id="get2" size="300px" placeholder="Enter a Number" required/>
+    <p id="r2" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+    <button style="margin-top: -15px;" onclick="maximization()" id="b2" type="button" class="btn btn-danger">Check</button>
+   </p> </div>
+    </div>
+    <!-- next Row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Check Sign of Number:<br/>
+            <input type="number" id="get3" size="300px" placeholder="Enter a Number" required/>
+            <p id="r3" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="checkSign()" id="b3" type="button" class="btn btn-danger">Check</button>
+           </p> </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Divisible by 5 and 11:<br/>
+            <input type="number" id="get4" size="300px" placeholder="Enter a Number" required/>
+            <p id="r4" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="division()" id="b4" type="button" class="btn btn-danger">Check</button>
+           </p> </div>
+    </div>
+    <!-- next Row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Check Even or Odd:<br/>
+            <input type="number" id="get5" size="300px" placeholder="Enter a Number" required/>
+            <p id="r5" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="check()" id="b5" type="button" class="btn btn-danger">Check</button>
+           </p> </div>
+           <!-- next module -->
+           <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Check Leap Year:<br/>
+            <input type="number" id="get6" size="300px" placeholder="Enter a year" required/>
+            <p id="r6" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="leapyear()" id="b6" type="button" class="btn btn-danger">Check</button>
+           </p> </div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Check Alphabet or Not:<br/>
+            <input type="text" id="get7" size="20px" placeholder="Enter anything" required/>
+            <p id="r7" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="aplpha()" id="b7" type="button" class="btn btn-danger">Check</button>
+           </p> </div>
+           <!-- next module -->
+           <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Check Alphabet is Vowal:<br/>
+            <input type="text" id="get8" size="20px" placeholder="Enter Any Alphabet" required/>
+            <p id="r8" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="vowalC()" id="b8" type="button" class="btn btn-danger">Check</button>
+           </p> </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Check Type of String:<br/>
+            <input type="text" id="get9" size="20px" placeholder="Enter Any Alphabet" required/>
+            <p id="r9" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="check2()" id="b9" type="button" class="btn btn-danger">Check</button>
+            </p> </div>
+           <hr/>
+    </div>
+    <!-- STRING HANDLING -->
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <center style="font-family: cursive;padding-left: 10px; margin:20px;border-left:#dc3546 7px solid; font-weight: bolder;color: #dc3546;font-size: 40px;border-right:#dc3546 7px solid;">String Handling</center>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Check length of String:<br/>
+            <input type="text" id="get10" size="20px" placeholder="Enter a String" required/>
+            <p id="r10" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="lenght()" id="b10" type="button" class="btn btn-danger">Check</button>
+           </p> </div>
+           <!-- next module -->
+           <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Copy String to Another:<br/>
+            <input type="text" id="get11" size="20px" placeholder="Enter anystring" required/>
+            <p id="r11" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="doule()" id="b11" type="button" class="btn btn-danger">Copy</button>
+           </p> </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Concatenate Strings:<br/>
+            <input type="text" id="get12" size="20px" placeholder="Enter anystring" required/>
+            <p id="r12" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="conx()" id="b12" type="button" class="btn btn-danger">Concatenate</button>
+           </p> </div>
+           <!-- next module -->
+           <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Compare Two Strings:<br/>
+            <input type="text" id="get13" size="20px" placeholder="Enter 1st String" required/>
+            <p id="r13" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="compa()" id="b13" type="button" class="btn btn-danger">Compare</button>
+           </p> </div>
+    </div>
+    <!-- next ROW -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">From Lower to UpperCase:<br/>
+            <input type="text" id="get14" size="20px" placeholder="Enter in LowerCase" required/>
+            <p id="r14" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="low()" id="b14" type="button" class="btn btn-danger">Change</button>
+           </p> </div>
+           <!-- next module -->
+           <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">From Upper to LowerCase:<br/>
+            <input type="text" id="get15" size="20px" placeholder="Enter in UpperCase" required/>
+            <p id="r15" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="upper()" id="b15" type="button" class="btn btn-danger">Change</button>
+           </p> </div>
+    </div>
+    <!-- next Row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Toggle Case Each Character:<br/>
+            <input type="text" id="get16" size="20px" placeholder="Enter a String" required/>
+            <p id="r16" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="toggle()" id="b16" type="button" class="btn btn-danger">Change</button>
+           </p> </div>
+           <!-- next module -->
+           <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Count Each Type of String:<br/>
+            <input type="text" id="get17" size="20px" placeholder="Enter a String" required/>
+            <p id="r17" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="findChar()" id="b17" type="button" class="btn btn-danger">Find</button>
+           </p> </div>
+    </div>
+    <!-- next Row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Vowal And Const in String:<br/>
+            <input type="text" id="get18" size="20px" placeholder="Enter a String" required/>
+            <p id="r18" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="vC()" id="b18" type="button" class="btn btn-danger">Find</button>
+           </p> </div>
+           <!-- next module -->
+           <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Words in The String:<br/>
+            <input type="text" id="get19" size="20px" placeholder="Enter a String" required/>
+            <p id="r19" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="conte()" id="b19" type="button" class="btn btn-danger">Count</button>
+           </p> </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Reverse The Char String:<br/>
+            <input type="text" id="get20" size="20px" placeholder="Enter a String" required/>
+            <p id="r20" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="reve()" id="b20" type="button" class="btn btn-danger">Reverse</button>
+           </p> </div>
+           <!-- next MOdule -->
+           <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Check Palindrome Strings:<br/>
+            <input type="text" id="get21" size="20px" placeholder="Enter a String" required/>
+            <p id="r21" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="plain()" id="b21" type="button" class="btn btn-danger">Check</button>
+           </p> </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Reverse Words of Strings:<br/>
+            <input type="text" id="get22" size="20px" placeholder="Enter a String" required/>
+            <p id="r22" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="ok()" id="b22" type="button" class="btn btn-danger">Reverse</button>
+           </p> </div>
+           <!-- next module -->
+           <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">First Occurrence of Char:<br/>
+            <input type="text" id="get23" size="20px" placeholder="Enter a String" required/>
+            <p id="r23" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="occu()" id="b23" type="button" class="btn btn-danger">Find</button>
+           </p> </div>
+    </div>
+    <!-- next Row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Last Occurrence of Char:<br/>
+            <input type="text" id="get24" size="20px" placeholder="Enter a String" required/>
+            <p id="r24" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="ucco()" id="b24" type="button" class="btn btn-danger">Find</button>
+           </p> </div>
+    </div>
+    <!-- ARRAY HANDLING -->
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <center style="font-family: cursive;padding-left: 10px; margin:20px;border-left:#dc3546 7px solid; font-weight: bolder;color: #dc3546;font-size: 40px;border-right:#dc3546 7px solid;">Array Handling</center>
+        </div>
+    </div>
+    <!-- Next Row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Read and Print Array:<br/>
+            <input type="text" id="get25" size="20px" placeholder="Enter 1st Elemant of Array" required/>
+            <p id="r25" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="print()" id="b25" type="button" class="btn btn-danger">Print</button>
+           </p> </div>
+
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Negative Element of Array:<br/>
+            <input type="number" id="get26" size="300px" placeholder="Enter 1st Elemant of Array" required/>
+            <p id="r26" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="print2()" id="b26" type="button" class="btn btn-danger">Print</button>
+           </p> </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Sum of Elements of Array:<br/>
+            <input type="number" id="get27" size="20px" placeholder="Enter 1st Elemant of Array" required/>
+            <p id="r27" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="sum()" id="b27" type="button" class="btn btn-danger">Sum</button>
+           </p> </div>
+           <!-- next module -->
+           <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Max and Min Elem of Array:<br/>
+            <input type="number" id="get28" size="20px" placeholder="Enter 1st Elemant of Array" required/>
+            <p id="r28" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="mm()" id="b28" type="button" class="btn btn-danger">Find</button>
+           </p> </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Largest Element of Array:<br/>
+            <input type="text" id="get29" size="20px" placeholder="Enter 1st Elemant of Array" required/>
+            <p id="r29" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="larger()" id="b29" type="button" class="btn btn-danger">Find</button>
+           </p> </div>
+           <!-- next module -->
+           <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Even and Odd Elem in Array:<br/>
+            <input type="number" id="get30" size="20px" placeholder="Enter 1st Elemant of Array" required/>
+            <p id="r30" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="eo()" id="b30" type="button" class="btn btn-danger">Count</button>
+           </p> </div>
+
+    </div>
+    <!-- next row -->
+    <div class="row">
+     <div class="col-1"></div>
+     <div class="col-md-5 col-sm-12">        
+        <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Negative Elements in Array:<br/>
+        <input type="number" id="get31" size="20px" placeholder="Enter 1st Elemant of Array" required/>
+        <p id="r31" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+        <button style="margin-top: -15px;" onclick="neg()" id="b31" type="button" class="btn btn-danger">Count</button>
+       </p> </div>
+       <!-- next module -->
+       <div class="col-md-5 col-sm-12">        
+        <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Copy Elements of Array:<br/>
+        <input type="text" id="get32" size="20px" placeholder="Enter 1st Elemant of Array" required/>
+        <p id="r32" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+        <button style="margin-top: -15px;" onclick="copy()" id="b32" type="button" class="btn btn-danger">Copy</button>
+       </p> </div>
+    </div>
+    <!-- Next Row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Add Elements In Array:<br/>
+            <input type="text" id="get33" size="20px" placeholder="Enter 1st Elemant of Array" required/>
+            <input type="text" id="geet33" size="20px" placeholder="Elements to Add in Array" required/>
+            <p id="r33" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="insert()" id="b33" type="button" class="btn btn-danger">Make</button>
+            <p id="re33" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="insert2()" id="bu33" type="button" class="btn btn-danger">Insert</button>
+           </p> </div>
+           <!-- next Module -->
+           <div class="col-md-5 col-sm-12">        
+            <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Add Elements In Array:<br/>
+            <input type="text" id="get34" size="20px" placeholder="Enter 1st Elemant of Array" required/>
+            <input type="number" id="geet34" size="20px" placeholder="position of Element to delete" required/>
+            <p id="r34" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="de()" id="b34" type="button" class="btn btn-danger">Make</button>
+            <p id="re34" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+            <button style="margin-top: -15px;" onclick="del()" id="bu34" type="button" class="btn btn-danger">Delete</button>
+           </p> </div>
+    </div>
+    <!-- Math Methods -->
+    <div class="row">
+    <div class="col-md-12 col-sm-12">
+        <center style="font-family: cursive;padding-left: 10px; margin:20px;border-left:#dc3546 7px solid; font-weight: bolder;color: #dc3546;font-size: 40px;border-right:#dc3546 7px solid;">Math Methods</center>
+    </div>
+</div>
+<!-- NEXT ROW -->
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-md-5 col-sm-12">        
+        <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Round the Number:<br/>
+        <input type="number" id="get35" size="20px" placeholder="Enter number in Float" required/>
+        <p id="r35" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+        <button style="margin-top: -15px;" onclick="round()" id="b35" type="button" class="btn btn-danger">Round</button>
+       </p> </div>
+       <!-- next module -->
+       <div class="col-md-5 col-sm-12">        
+        <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Ceil the Number:<br/>
+        <input type="number" id="get36" size="20px" placeholder="Enter number in Float" required/>
+        <p id="r36" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+        <button style="margin-top: -15px;" onclick="ceill()" id="b36" type="button" class="btn btn-danger">Ceil</button>
+       </p> </div>
+</div>
+<!-- next row -->
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-md-5 col-sm-12">        
+        <p style="font-size:30px;color: #dc3546;font-family: cursive; ">To Floor the Number:<br/>
+        <input type="number" id="get37" size="20px" placeholder="Enter number in Float" required/>
+        <p id="r37" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+        <button style="margin-top: -15px;" onclick="floorr()" id="b37" type="button" class="btn btn-danger">Floor</button>
+       </p> </div>
+</div>
+<!-- LOOPS -->
+<div class="row">
+    <div class="col-md-12 col-sm-12">
+        <center style="font-family: cursive;padding-left: 10px; margin:20px;border-left:#dc3546 7px solid; font-weight: bolder;color: #dc3546;font-size: 40px;border-right:#dc3546 7px solid;">Loops</center>
+        </div>
+</div>
+<!-- Next Row -->
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-md-5 col-sm-12">        
+        <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Natural Numbers:<br/>
+        <input type="number" id="get38" size="20px" placeholder="Enter Limit" required/>
+        <p id="r38" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+        <button style="margin-top: -15px;" onclick="natural()" id="b38" type="button" class="btn btn-danger">Print</button>
+       </p> </div>
+       <!-- next module -->
+       <div class="col-md-5 col-sm-12">        
+        <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Natural Numbers in Reverse:<br/>
+        <input type="number" id="get39" size="20px" placeholder="Enter Limit" required/>
+        <p id="r39" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+        <button style="margin-top: -15px;" onclick="unnatural()" id="b39" type="button" class="btn btn-danger">Print</button>
+       </p> </div>
+</div>
+<!-- next row -->
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-md-5 col-sm-12">        
+        <p style="font-size:30px;color: #dc3546;font-family: cursive; ">All Alphabets:<br/>
+        <input type="number" id="get40" size="20px" placeholder="Enter Limit " required/>
+        <p id="r40" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+        <button style="margin-top: -15px;" onclick="alphaebt()" id="b40" type="button" class="btn btn-danger">Print</button>
+       </p> </div>
+       <!-- next module -->
+       <div class="col-md-5 col-sm-12">        
+        <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Even Num to Specific Limit:<br/>
+        <input type="number" id="get41" size="20px" placeholder="Enter Limit " required/>
+        <p id="r41" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+        <button style="margin-top: -15px;" onclick="fixeven()" id="b41" type="button" class="btn btn-danger">Print</button>
+       </p> </div>
+</div>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-md-5 col-sm-12">        
+        <p style="font-size:30px;color: #dc3546;font-family: cursive; ">Odd Num to Specific Limit:<br/>
+        <input type="number" id="get42" size="20px" placeholder="Enter Limit " required/>
+        <p id="r42" style="font-size: 20px; font-family: cursive;color: #dc3546;"></p>
+        <button style="margin-top: -15px;" onclick="fixodd()" id="b42" type="button" class="btn btn-danger">Print</button>
+       </p> </div>
+
+</div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
